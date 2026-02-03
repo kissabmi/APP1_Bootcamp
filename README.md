@@ -185,7 +185,7 @@ Convert a string to a real number as if it were processed by the `float()` funct
 | -14.97         | -29.940         |
 | +19.2          | 38.400          |
 
-### Task 6. Movies
+## Task 6. Movies
 
 Join two lists of movies sorted by the `year` field so that the resulting list remains sorted. The input data is in json format. Output the joined list also in json format. Use the input.txt text file to enter data. Use the standard output stream to output data. Check the correctness of the input data. If the input file is empty, display the message “Empty file”.
 
