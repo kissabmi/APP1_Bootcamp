@@ -24,18 +24,21 @@ In this project, you will learn how to create a web application in Python using 
 
 **Instructions**
 
-1. Throughout the course, you will often feel uncertain and have limited information, but that's all part of the experience. Remember, the repository and Google are always there for you. So are your peers and Rocket.Chat. Talk. Search. Use your common sense. Don't be afraid to make mistakes.
-2. Be mindful of your sources. Cross-check. Think critically. Analyze. Compare.
-3. Read the tasks carefully, and then read them again.
-4. Pay close attention to the examples, too. They may include information that is not explicitly stated in the task itself.
-5. You may encounter inconsistencies when something in the task or example contradicts what you thought you knew. Try to figure them out. If you can't, write it down as an open question and resolve it as you go. Don't leave questions unresolved.
-6. If a task seems unclear or impossible, it probably just feels that way. Break it down into parts. Most of them will make sense on their own.
-7. You’ll encounter all kinds of tasks. The bonus ones are for those who are curious and detail-oriented. They’re optional and more challenging, but completing them gives you extra experience and insight.
-8. Don't try to cheat the system or your peers. Ultimately, you'll only be cheating yourself.
-9. Got a question? Ask the peer to your right. If that doesn't help, ask the peer to your left.
-10. When asking for help, always make sure you understand the why, how, and what-for. Otherwise, the help won't be very useful.
-11. Always push your code to the develop branch only. The master branch will be ignored. Work inside the src directory.
-12. Your directory should not contain any files besides those required for the tasks.
+How to learn at “School 21”:
+
+- Here, you’ll find a unique learning experience with a lot of freedom. You’re given a task and left to find your own way to solve it, using whatever resources work best for you — whether that’s the Internet or AI tools like GigaChat. Just be mindful of information quality: verify, think critically, analyze, and compare.
+- Peer-to-peer (P2P) learning is the exchange of knowledge and experience with peers, where everyone acts as both mentor and student. This approach allows you to gain a deeper understanding of the material by learning from one another.
+- Feel free to ask for help: around you are peers who are also navigating this path for the first time. Share your own experience and ideas with others.  Join Rocket.Chat to stay updated with the latest community announcements. 
+- Your learning is meaningless if you just copy someone else’s solutions. When receiving help from others, always make sure you fully understand the “why”, “how”, and “purpose” behind the solution. Don’t be afraid to make mistakes. 
+- Does the task seem impossible? Take a break, get some fresh air and clear your mind — this has helped many people. Maybe after that, the solution will come to you naturally.
+- The learning process is just as important as the result. It’s not just about completing the task — it’s about understanding HOW to solve it. 
+
+How to work with the project:
+
+- Before starting, clone the project from GitLab into a repository with the same name.
+- All files should be created inside the _src/_ folder of the cloned repository.
+- After cloning the project, create a _develop_ branch and do all your development there. Then, push the _develop_ branch to GitLab.
+- Your directory should not contain any files other than those specified in the assignments.
 
 ## Chapter II
 
