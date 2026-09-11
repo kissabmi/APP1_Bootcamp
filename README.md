@@ -1,341 +1,52 @@
-# Project 01 - Python_Bootcamp  
+# APP1_Bootcamp — School 21
 
-Summary: In this project, you will learn about the main functions of the **Python** language .
+Три учебных проекта на Python.
 
-## Contents
- 1. [Chapter I](#chapter-i)   
-     - [Rules](#rules)   
- 2. [Chapter II](#chapter-ii)  
-     - [General information](#general-information)  
- 3. [Chapter III](#chapter-iii)      
-     - [Task 0. Project creation](#task-0-project-creation)  
-     - [Task 1. Scalar product](#task-1-scalar-product)  
-     - [Task 2. Palindrome](#task-2-palindrome)  
-     - [Task 3. Figures](#task-3-figures)  
-     - [Task 4. Pascal's triangle](#task-4-pascal's-triangle)  
-     - [Task 5. String to number conversion](#task-5-string-to-number-conversion)  
-     - [Task 6. Movies](#task-6-movies)  
-     - [Task 7. A robot](#task-7-a-robot)
-     - [Task 8. Different numbers](#task-8-different-numbers) 
-     - [Task 9. The derivative at a point](#task-9-the-derivative-at-a-point)  
-     - [Task 10. Machines](#task-10-machines)   
+| Проект | Содержание |
+|---|---|
+| [Python 01](project01/) | Десять задач: числа, коллекции, матрицы, JSON и алгоритмы |
+| [Python 02](project02/) | Многопроцессная симуляция экзамена и асинхронный загрузчик изображений |
+| [Python 03](project03/) | Flask-приложение «Крестики-нолики» с разделением на слои |
 
+## Запуск
 
+Нужен Python 3.11+. Ниже команды для Bash; из Fish сначала выполните `bash`.
 
-## Chapter I
-## Rules
+### Python 01
 
-How to learn at “School 21”:
-
-- Here, you’ll find a unique learning experience with a lot of freedom. You’re given a task and left to find your own way to solve it, using whatever resources work best for you — whether that’s the Internet or AI tools like GigaChat. Just be mindful of information quality: verify, think critically, analyze, and compare.
-- Peer-to-peer (P2P) learning is the exchange of knowledge and experience with peers, where everyone acts as both mentor and student. This approach allows you to gain a deeper understanding of the material by learning from one another.
-- Feel free to ask for help: around you are peers who are also navigating this path for the first time. Share your own experience and ideas with others.  Join Rocket.Chat to stay updated with the latest community announcements. 
-- Your learning is meaningless if you just copy someone else’s solutions. When receiving help from others, always make sure you fully understand the “why”, “how”, and “purpose” behind the solution. Don’t be afraid to make mistakes. 
-- Does the task seem impossible? Take a break, get some fresh air and clear your mind — this has helped many people. Maybe after that, the solution will come to you naturally.
-- The learning process is just as important as the result. It’s not just about completing the task — it’s about understanding HOW to solve it. 
-
-How to work with the project:
-
-- Before starting, clone the project from GitLab into a repository with the same name.
-- All files should be created inside the _src/_ folder of the cloned repository.
-- After cloning the project, create a _develop_ branch and do all your development there. Then, push the _develop_ branch to GitLab.
-- Your directory should not contain any files other than those specified in the assignments.
-
-## Chapter II
-## General information
-
-**Python** is a high-level, interpreted programming language that has a simple and readable syntax.
-
-In the late 1980s, Guido van Rossum of the Dutch National Research Institute for Mathematics and Computer Science GWI proposed the idea of creating a new programming language.
-
-At the time, Guido was involved in the development of the ABC language as a basis for studying programming. The ABC project eventually failed and Guido moved on to programming other projects involving the Amoeba operating system as a key theme (which connects computers in a network and gives users the illusion of interacting with a single system).
-
-In 1989, the Amoeba system lacked a scripting language, so Guido van Rossum planned a mini project: he was going to write a programming language based on the ABC developments. The first prototype consisted of a simple virtual machine, a parser, and a runtime environment. CWI developers liked the Python prototype, and many of them got involved right away: they started using the language for internal projects and helped refine the code.
-
-In February 1991, Guido published the source code for Python version 0.9.0 in the newsgroup. This initial release had modules borrowed from Modula-3. Van Rossum described the module as "one of the main elements in Python programming".
-
-Python 1.0 was released in January 1994. The last version released by Van Rossum while working at the Center for Mathematics and Informatics (CWI) was Python 1.2.
-
-On June 29, 1994, the forum published an article that addressed the Python community's dependence on Guido van Rossum's solutions - the author shared that large companies are afraid of using technologies that are tied to one person.
-
-The article was written by Michael McLay of the US National Institute of Standards and Technology (NIST). He recruited Guido to work with him, and this led to the creation of the Python Software Foundation in 1995 — a non-profit organization that was to be responsible for the protection and development of the Python language. This organization got several leaders, and Guido van Rossum was given the mock title of Benevolent Dictator For Life.
-
-Since then, Python has become very popular with developers who are attracted to its clean syntax and reputation for productivity. The second version of Python appeared in 2000, and the third version in 2008. Since late 2020, the official Python community has only supported the third version.
-
-**Python's main advantages**:
-
-1. Сode readability: Python syntax is designed to make code easy to read and understand. It helps to develop programs quickly and simplifies code maintenance.
-2. Interpretability: Python is an interpreted language, which means that the code is executed line by line by an interpreter rather than compiled into machine code. This makes development and testing easier.
-3. Multitasking: Python supports both synchronous and asynchronous programming. This allows us to efficiently solve a variety of tasks, including processing large amounts of data, creating web applications, and solving scientific problems.
-4. A large community: Python has an active developer community, which contributes to an extensive library of modules and frameworks. This makes Python a powerful tool for a variety of tasks.
-5. Wide use: Python is used in various fields such as web development (FastAPI, Django, Flask), data analysis and machine learning (NumPy, Pandas, TensorFlow, PyTorch), task automation, scientific research, game creation, and more.
-6. Portability: Python is a cross-platform language, which allows programs to run on different operating systems without changes to the source code.
-7. Object-oriented programming: Python supports object-oriented programming (OOP), which makes code easier to organize and more modular.
-
-### Topics to study:
-
-- Program entry point, program structure: In Python, the entry point into a program usually starts with the `main()` function or by executing code at the top level of the file.
-- Program compilation/interpretation: Python is an interpreted language, code is executed line by line by the interpreter.
-- Control structures (sequential, branching, repetition): Python also has conditional statements (if-elif-else), loops (for, while) to control program execution.
-- Simple data types: Python has data types such as numbers (integers, floating point numbers), strings, and boolean values.
-- Composite data types: Lists, tuples, dictionaries, and sets are the main composite data types in Python.
-- Input/Output (stdin-stdout): Python has features to handle data input and output via standard streams:  (`input()` and `print()`.
-- Memory management, garbage collector: Python automatically manages memory and has a garbage collector that keeps track of unused objects and frees memory.
-- Complex data structures: Python includes high-level data structures such as lists of lists, dictionaries of dictionaries, modules for creating templates (e.g., the` typing` module for supporting typing), and others.
-- Exception handling: Python provides mechanisms for handling exceptions using keywords `try`, `except`, `finally`, `else`. This allows programmers to handle and manage errors in the code.
-- Working with files: Python has rich tools for working with files. You can open, read, write and close files using built-in functions and methods.
-- Functions: You can create custom functions in Python using the `def` keyword. This allows for better code organization as well as the implementation of recursive algorithms.
-- Object-oriented programming: Python supports object-oriented programming: You can create classes and objects, define methods and attributes, and use inheritance and polymorphism.
-
-## Chapter III
-
-**Pay attention!** Each task must be prepared as an individual project. For example, `T01/src/exercise0`, `T01/src/exercise1`, ... , `T01/src/exerciseN-1`, where *N* is a number of tasks. If you need the previous task for the next one, simply copy the previous project to the directory of the next one and continue development in it.
-
-## Task 0. Creating a Project
-
-For development in the Python language, you will need to install the appropriate interpreter. You can download it from the official site. You will then be able to use the command line and/or various integrated development environments (IDEs) to work on your projects. 
-A project in this case is a set of files with the extension `.py` , which contain Python code. They are run with the python command `filename.py` (or `python3`) individually or imported into some common file, often called `main.py`. The process of creating a project in PyCharm is quite simple - you will need to select the Python interpreter, as well as the path for storing and the name of the project. It is also possible to create a virtual environment, which is usually convenient to use for large projects with many different dependencies (libraries, frameworks). The solutions to the following tasks need to be organized as separate files: `task1.py`, `task2.py`, ... I.e the solution of each task must be in an individual file. Run these files also separately.
-
-## Task 1. Scalar product
-
-Calculate the scalar product of two vectors in three dimensional space. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
-
-- Input: Real numbers, coordinates of two vectors on two lines respectively.
-- Output: Real number, scalar product of given vectors.
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>1.0 2.0 3.0<br>4.0 5.0 6.0</td>
-        <td>32.0</td>
-    </tr>
-</table>
-
-## Task 2. Palindrome
-
-Determine whether the number is a palindrome or not. Use standard input stream and standard output stream for data input and output, respectively. Do not use strings. Negative numbers are not considered palindromes. Do not check the correctness of the input data.
-
-- Input: Integer.
-- Output: True if this number is a palindrome. False if this number is not a palindrome.
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>1143411</td>
-        <td>True</td>
-    </tr>
-</table>
-
-## Task 3. Figures
-
-Process a square matrix of zeros and ones, count the number of "squares" and "circles" in it. There are no other figures in the matrix. The figures cannot be beyond the boundaries of the matrix. There is an empty space between any two figures. Identified figures contain more than one unit. Use the input.txt file to enter data. Use the standard output stream to output data. Do not check the correctness of the input data.
-
-- Input: The rows of a square matrix, each containing zeros/units separated by a space.
-- Output: Two natural numbers separated by a space are the number of "squares" and the number of "circles" in the matrix, respectively.
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>0 0 0 0 0 0 0 0 1 0<br>0 1 1 1 0 0 0 1 1 1<br>0 1 1 1 0 0 0 0 1 0<br>
-        0 1 1 1 0 0 0 0 0 0<br>0 0 0 0 0 0 0 0 0 0<br>0 1 1 0 0 1 1 0 0 0<br>
-        0 1 1 0 1 1 1 1 0 0<br>0 0 0 0 1 1 1 1 0 0<br>1 1 0 0 0 1 1 0 0 0<br>1 1 0 0 0 0 0 0 0 0</td>
-        <td>3 2</td>
-    </tr>
-</table>
-
-## Task 4. Pascal's triangle
-
-Output N first rows of Pascal's triangle by the given number N of rows. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
-
-- Input: Integer, number of rows.
-- Output: Integer numbers, Pascal's triangle.
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>1<br>1 1<br>1 2 1<br>1 3 3 1<br>1 4 6 4 1</td>
-    </tr>
-    <tr>
-        <td>f</td>
-        <td>Natural number was expected</td>
-    </tr>
-
-</table>
-
-## Task 5. String to number conversion
-
-Convert a string to a real number as if it were processed by the `float()` function . It, as well as any similar functions, should not be used in the implementation. Multiply the resulting real number by 2. Print the result with three digits after the dot. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
-
-- Input: A string
-- Output: A real number if the input is correct. An error message if the input is incorrect.
-
-
-| Input          | Output          |
-|----------------|-----------------|
-| -14.97         | -29.940         |
-| +19.2          | 38.400          |
-
-## Task 6. Movies
-
-Join two lists of movies sorted by the `year` field so that the resulting list remains sorted. The input data is in json format. Output the joined list also in json format. Use the input.txt text file to enter data. Use the standard output stream to output data. Check the correctness of the input data. If the input file is empty, display the message “Empty file”.
-
-- Input: Two sorted lists of movies in json format.
-- Output: The joined sorted list in json format if the input is correct. An error message if the input is incorrect.
-
-### Input
-
-```json
-{
-  "list1": [
-    {
-      "title": "Titanic",
-      "year": 1998
-    },
-    {
-      "title": "Taxi 2",
-      "year": 2000
-    },
-    {
-      "title": "Avatar",
-      "year": 2009
-    }
-  ],
-  "list2": [
-    {
-      "title": "Terminator",
-      "year": 1984
-    },
-    {
-      "title": "Home Alone",
-      "year": 1993
-    },
-    {
-      "title": "Spider-Man",
-      "year": 2002
-    }
-  ]
-}
-```
-### Output
-
-```json
-{
-  "list0": [
-    {
-      "title": "Terminator",
-      "year": 1984
-    },
-    {
-      "title": "Home Alone",
-      "year": 1993
-    },
-    {
-      "title": "Titanic",
-      "year": 1998
-    },
-    {
-      "title": "Taxi 2",
-      "year": 2000
-    },
-    {
-      "title": "Spider-Man",
-      "year": 2002
-    },
-    {
-      "title": "Avatar",
-      "year": 2009
-    }
-  ]
-}
+```bash
+cd project01/src/exercise1
+python3 task1.py
 ```
 
-## Task 7. A robot
+Для скалярного произведения введите две строки по три числа, например `1 2 3` и `4 5 6`.
+Остальные задания запускаются аналогично из своей папки `exerciseN`.
+`exercise3` и `exercise6` читают локальный `input.txt`; примеры сохранены.
+Форматы ввода описаны в [задании](project01/README_RUS.md).
 
-The robot is able to move down or to the right one square of the field. The field is rectangular and filled with numbers - the number of coins in each square of the field. The robot collects coins from each square it walked on. It is initially located in the top left square, so it collects the coins located there anyway. The robot's task is to collect as many coins as possible on the way to the bottom right square of the field, so it always moves along the most successful route. Determine from the given field how many coins the robot will collect. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
+### Python 02
 
-- Input: Two natural numbers, the number of rows N and the number of columns M of a field, respectively. N rows, each containing M non-negative numbers, the number of coins in each square of the field.
-- Output: A non-negative number, the total number of coins the robot will collect.
+Из корня репозитория:
 
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>3 4<br>3 0 2 1<br>6 4 8 5<br>3 3 6 0</td>
-        <td>27</td>
-    </tr>
-</table>
+```bash
+python3 project02/src/exercise0/exam.py
+python3 project02/src/exercise1/downloader.py
+```
 
-## Task 8. Different numbers
+Запускайте по очереди. Для экзамена сохранены `students.txt`, `examiners.txt`, `questions.txt`.
+Загрузчик спросит папку и HTTP(S)-ссылки на изображения; пустая строка завершает ввод.
+Для внешних картинок нужен интернет, для симуляции экзамена — нет.
+Оба скрипта используют стандартную библиотеку.
 
-Count the number of different numbers entered. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
+### Python 03
 
-- Input: Natural number, the number of numbers is N. N lines, each containing an integer.
-- Output: A natural number, the number of different numbers entered.
+```bash
+cd project03
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r src/requirements.txt
+python src/main.py
+```
 
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>10<br>5<br>3<br>7<br>3<br>6<br>3<br>5<br>2<br>9<br>4</td>
-        <td>7</td>
-    </tr>
-</table>
-
-## Task 9. The derivative at a point
-
-Calculate the derivative of a given polynomial at a given point. Print the result with three digits after the dot. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
-
-- Input: The first line contains a natural and a real numbers, the highest degree of the polynomial N and the point at which you want to find the derivative, respectively. The subsequent lines contain real numbers, coefficients at the degrees of x, starting with the highest degree.
-- Output: The real number, the derivative of a polynomial at a point.
-
-Polynomial: `5 * x**2 + 1.2 * x - 3` \
-Derivative: `10 * x + 1.2` \
-Derivative at a point`3.0`: `30 + 1.2 = 31.2`
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>2 3.0<br>5<br>1.2<br>-3</td>
-        <td>31.200</td>
-    </tr>
-</table>
-
-## Task 10. Machines
-
-The machine has certain year of manufacture, cost and running time. You need to select two such machines that will take turns and spend a certain amount of time. At the same time, the cost of the machines should be minimal and the year of manufacture should be the same. Output the total cost of the selected machines. It is guaranteed that there is a single solution. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
-
-- Input: Two natural numbers separated by a space, the number of available machines N and the required total running time, respectively. N lines, each containing three natural numbers separated by a space, the year of manufacture, the cost and the running time of the machine, respectively.
-- Output: A real number if the input is correct. An error message if the input is incorrect.
-
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>5 48<br>2023 100 14<br>2020 18 347<br>2023 10000000 34<br>2023 1000 34<br>2022 10 34</td>
-        <td>1100</td>
-    </tr>
-</table>
-
-💡 [Click here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to give us feedback on this project**. It's anonymous and will help our team make your learning process better.
+Откройте http://127.0.0.1:5000/. При запуске создаются демонстрационные игры `abc` и `game2`.
+Состояние хранится в памяти и пропадает после остановки приложения. Остановка — Ctrl+C.
